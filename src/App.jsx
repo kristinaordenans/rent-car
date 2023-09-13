@@ -1,12 +1,21 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import React from 'react';
+import HomePage from './pages/HomePage';
+import CatalogPage from './pages/CatalogPage';
+import FavoritesPage from './pages/FavoritesPage';
+import Layout from './components/Layout/Layout';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header"> 
-        <h1>HALLO!</h1>
-      </header>
-    </div>
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<HomePage/>} />
+          <Route path='/catalog' element={<CatalogPage/>}/>
+          <Route path='/favorites' element={<FavoritesPage/>} />
+          <Route path='*' element={<HomePage/>} />
+        </Route>
+      </Routes>
   );
 }
 

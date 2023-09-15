@@ -1,11 +1,14 @@
 .container {
     display:flex;
+    position: fixed;
+    top: 0;
+    width:100%;
     background-color: #1A1919;
     padding-top:20px;
     padding-bottom: 20px;
     padding-left:20px;
     padding-right:20px; 
-    justify-content: space-between;   
+    z-index: 1;
 }
 
 .navContainer {
@@ -20,6 +23,11 @@
     font-size: 22px;
 }
 
+.navLink:hover,
+.navlink:focus {
+    color:rgb(239, 159, 20);
+}
+
 .navTitle {
     text-decoration: none;
     color:#fff;
@@ -30,8 +38,9 @@
 }
 
 .navLinkContact {
+    position: absolute;
+    right: 60px;
     text-decoration: none;
     color: #fff;
-    font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
 }

@@ -1,8 +1,12 @@
+li {
+    list-style-type: none;
+}
+
 .heroBacground {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 150px;
-    padding-bottom: 170px;
+    padding-top: 200px;
+    padding-bottom: 220px;
     text-align: center;
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
@@ -15,4 +19,84 @@
     margin:0;
     color:#fff;
     font-size: 60px;
+}
+
+.heroText {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.heroBtn {
+    text-decoration: none;
+    background-color: rgb(239, 159, 20);
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.heroBtn:hover,
+.heroBtn:focus {
+    background-color: rgb(241, 153, 2);
+}
+
+.container {
+    padding-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefitsTitle{
+    font-size: 40px;
+    /* margin-bottom: 40px; */
+}
+
+.benefitsList {
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.benefitsItem {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: center;
+}
+
+.serviceImg {
+    background-image: url(../../../public/images/PNG/benefitService.png);
+    background-size: cover;
+    width:300px;
+    height: 300px;
+}
+
+.qualityImg {
+    background-image: url(../../../public/images/PNG/benefitsVehicles.png);
+    background-size: cover;
+    width:300px;
+    height: 300px;
+}
+
+.lowImg {
+    background-image: url(../../../public/images/PNG/benefitsLowCost.png);
+    background-size: cover;
+    width:300px;
+    height: 300px;
+}
+
+.benefitsText {
+    font-size: 26px;
+    width: 300px;
 }

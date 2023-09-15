@@ -1,0 +1,18 @@
+.heroBacground {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 170px;
+    text-align: center;
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../../../public/images/rentCarHero2.jpg);
+    background-size: cover;
+}
+
+.heroTitle {
+    margin:0;
+    color:#fff;
+    font-size: 60px;
+}

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import css from '../Hero/Hero.module.css';
 
 const Hero = () => {
@@ -8,8 +8,7 @@ const Hero = () => {
                 <div className={css.heroWrap}>
                     <h1 className={css.heroTitle}>Rent your car</h1>
                     <p className={css.heroText}>take your best trip</p>
-                    {/* <button className={css.heroBtn} type="button">Rental car</button> */}
-                    <Link href="tel:+380730000000"className={css.heroBtn}>Rental car</Link>
+                    <a href="tel:+380730000000"className={css.heroBtn}>Rental car</a>
                 </div>
           </div>
           <div className={css.container}>

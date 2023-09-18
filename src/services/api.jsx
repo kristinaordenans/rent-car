@@ -1,20 +1,11 @@
-// import axios from 'axios';
-// import { createAsyncThunk } from '@reduxjs/toolkit';
-// axios.default.baseURL="https://65016dd9736d26322f5bab4d.mockapi.io/cars/"
 
-// export const fetchCars = createAsyncThunk(
-//    "cars/fetchAll",
-//    async(_,thunkAPI) => {
-//     try {
-//         const{data} = await axios.get('/cars');
-//         return data;
-//     } catch (err) {
-//         return thunkAPI.rejectWithValue(err.message);
-//     }
-//    }
-// );
 
-const fetchCars = () => {
+const fetchCars = (page,limit) => {
+
+    const url = new URL('https://65016dd9736d26322f5bab4d.mockapi.io/cars/Advert');
+        url.searchParams.append('page',page);
+        url.searchParams.append('limit',limit);
+
     return fetch('https://65016dd9736d26322f5bab4d.mockapi.io/cars/Advert',{
         method: 'GET',
         headers: {

@@ -4,6 +4,7 @@ const CatalogPage = () => {
     return (
         <div>
             <CarsList />
+            
         </div>
     )
 }

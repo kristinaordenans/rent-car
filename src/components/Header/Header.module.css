@@ -23,6 +23,10 @@
     font-size: 22px;
 }
 
+.navLinkCurrent {
+    color:aqua;
+}
+
 .navLink:hover,
 .navlink:focus {
     color:rgb(239, 159, 20);

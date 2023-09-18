@@ -52,6 +52,11 @@ btn:focus {
     color: rgb(241, 153, 2);
 }
 
+.carItemTitleContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
 .btnLike {
     position: absolute;
     top: 14px;

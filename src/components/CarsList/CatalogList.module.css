@@ -31,6 +31,7 @@
     padding-right: 97px;
     font-size: 14px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover,
@@ -63,6 +64,7 @@ btn:focus {
     right: 14px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .likeContainer {

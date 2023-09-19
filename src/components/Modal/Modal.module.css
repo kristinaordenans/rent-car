@@ -13,13 +13,14 @@
   }
   
   .modalContent {
+    position: relative;
     background-color: #fff;
     padding: 40px;
-    width:540px;
+    width:500px;
     border-radius: 24px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* max-width: 80%; */
-    text-align: center;
+    max-width: 80%;
+    /* text-align: center; */
     position: relative;
   }
   
@@ -66,10 +67,15 @@
 }
 
 .carImg{
-    width:510px;
-    /* height: 276px; */
+    width:500px;
+
+    height: 248px;
     border-radius: 13px;
     object-fit: cover;
+}
+
+.textModalContainer{
+  display: block;
 }
 
 .btn {
@@ -80,10 +86,10 @@
     color: #fff;
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-left: 97px;
-    padding-right: 97px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .btn:hover,
@@ -97,8 +103,11 @@ btn:focus {
 }
 
 .carItemTitle {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 8px;
 }
 
 .carItemTitleSpan {
@@ -115,4 +124,34 @@ btn:focus {
 
 .likeContainer {
     position: relative;
+}
+
+.conditions{
+  background-color: #F9F9F9;
+  font-size: 12px;
+  margin: 0;
+  border-radius: 35px;
+  padding-left: 5px ;
+  line-height: 30px;
+}
+
+.conditionsSpan {
+  color:#3470FF;
+  font-weight: 600;
+}
+
+.conditionsContainer {
+   display: flex;
+   flex-wrap: wrap;
+   gap:8px;
+   margin-bottom: 8px;
+}
+
+.modalTitle {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.functionalities {
+  width: 400px;
 }

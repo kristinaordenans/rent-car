@@ -21,9 +21,9 @@ console.log(description);
   return (
     <div className={css.modal} onClick={handleBackdropClick}>
       <div className={css.modalContent}>
-        <div>
+        
         <div className={css.likeContainer}>
-          <img className={css.carImg} src={`${img}`} alt={`${model}`} width="510" />
+          <img className={css.carImg} src={`${img}`} alt={`${model}`} width="420" alt={model}/>
           <button className={css.btnLike} >
             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -60,7 +60,7 @@ console.log(description);
           </div>
           <a href='tel:+380730000000'className={css.btn}>Rental car</a>
         </div>
-        </div>
+        
         
         <button onClick={closeModal}>
            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

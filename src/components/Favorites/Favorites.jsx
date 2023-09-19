@@ -18,7 +18,7 @@ const Favorites =({ carData, handleToggleFavorite }) => {
 
   return (
     <div>
-    <ul>
+    {/* <ul>
          <li className={css.carItem} key={carData.id}>
          <div className={css.likeContainer}>
            <img className={css.carImg} src={`${carData.img}`} alt={`${carData.model}`} width="274" />
@@ -53,7 +53,7 @@ const Favorites =({ carData, handleToggleFavorite }) => {
          </button>
        </li>
       
-    </ul>
+    </ul> */}
   </div>
   );
 };

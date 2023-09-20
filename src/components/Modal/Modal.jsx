@@ -15,7 +15,7 @@ const Modal = ({ isOpen, closeModal, carDetails }) => {
     return null; // Не відображаємо модалку, якщо isOpen дорівнює false
   }
 
-  const {  year, make, model, type, img, description, fuelConsumption, engineSize, accessories, functionalities, rentalPrice, rentalCompany, address, rentalConditions, mileage} = carDetails;
+  const {  year, make, model, type, img, description, fuelConsumption, engineSize, functionalities, rentalPrice, address, mileage} = carDetails;
 
 console.log(description);
   return (
@@ -23,7 +23,7 @@ console.log(description);
       <div className={css.modalContent}>
         
         <div className={css.likeContainer}>
-          <img className={css.carImg} src={`${img}`} alt={`${model}`} width="420" alt={model}/>
+          <img className={css.carImg} src={`${img}`} alt={`${model}`} width="420"/>
           <button className={css.btnLike} >
             <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path

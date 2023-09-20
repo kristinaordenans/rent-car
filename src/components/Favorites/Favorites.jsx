@@ -18,7 +18,7 @@ const Favorites =({ carData, handleToggleFavorite }) => {
 
   return (
     <div>
-    {/* <ul>
+    <ul>
          <li className={css.carItem} key={carData.id}>
          <div className={css.likeContainer}>
            <img className={css.carImg} src={`${carData.img}`} alt={`${carData.model}`} width="274" />
@@ -53,28 +53,9 @@ const Favorites =({ carData, handleToggleFavorite }) => {
          </button>
        </li>
       
-    </ul> */}
+    </ul>
   </div>
   );
 };
-
-// const Favorites = ({ carData, handleToggleFavorite }) => {
-//     const { id, img, make, model, type, mileage, year, rentalPrice, rentalCompany, functionalities, address } = carData;
-//     const favoriteCars = JSON.parse(localStorage.getItem('favoriteCars')) || [];
-//     const isFavorite = favoriteCars.some((favoriteCar) => favoriteCar.id === id);
-  
-//     return (
-//         <div className={css.favoriteItem}>
-//           <img src={img} alt={model} width="100" />
-//           <h3>{make} {model}, {year}</h3>
-//           <p>{address.split(",").slice(1, 2)} | {address.split(",").slice(2, 3)} | {rentalCompany}</p>
-//           <p>{type} | {mileage} | {functionalities.slice(0, 1)}</p>
-//           <p>Rental Price: {rentalPrice}</p>
-//           <button onClick={() => handleToggleFavorite(carData)}>
-//             {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
-//           </button>
-//         </div>
-//       );
-//   };
 
 export default Favorites;

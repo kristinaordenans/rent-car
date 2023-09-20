@@ -2,23 +2,24 @@ import { useEffect, useState } from "react";
 import css from '../Favorites/Favorites.module.css';
 
 
-const Favorites =({ carData, handleToggleFavorite }) => {
-    const [isFavorite, setIsFavorite] = useState([]);
+const Favorites =() => {
+    // const [isFavorite, setIsFavorite] = useState([]);
     
-    useEffect(() => {
-        const favoriteCars = JSON.parse(localStorage.getItem('favoriteCars')) || [];
-        const isCarFavorite = favoriteCars.some((favoriteCar) => favoriteCar.id === carData.id);
-        setIsFavorite(isCarFavorite);
-      }, [carData.id]);
+    // useEffect(() => {
+    //     const favoriteCars = JSON.parse(localStorage.getItem('favoriteCars')) || [];
+    //     const isCarFavorite = favoriteCars.some((favoriteCar) => favoriteCar.id === carData.id);
+    //     setIsFavorite(isCarFavorite);
+    //   }, [carData.id]);
     
-      const toggleFavorite = () => {
-        handleToggleFavorite(carData.id);
-        setIsFavorite(!isFavorite);
-      };
+    //   const toggleFavorite = () => {
+    //     handleToggleFavorite(carData.id);
+    //     setIsFavorite(!isFavorite);
+    //   };
 
   return (
     <div>
-    <ul>
+      <h1>Favorites</h1>
+    {/* <ul>
          <li className={css.carItem} key={carData.id}>
          <div className={css.likeContainer}>
            <img className={css.carImg} src={`${carData.img}`} alt={`${carData.model}`} width="274" />
@@ -53,7 +54,7 @@ const Favorites =({ carData, handleToggleFavorite }) => {
          </button>
        </li>
       
-    </ul>
+    </ul> */}
   </div>
   );
 };
